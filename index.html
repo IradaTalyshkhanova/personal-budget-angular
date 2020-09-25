@@ -2,18 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--view good on all devices--> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is an SEO Change -->
+    <meta name="Description" content="Help staying on track when budgeting your bills">
     <title>Personal Budget</title>
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <div class="menu">
+    <!-- This is an A11y Change -->
+    <!-- It provides a label that can be read by assistive technology-->
+    <div aria-label="menu" class="menu">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/login.html">Login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
             <li><a href="https://google.com">Google</a></li>
         </ul>
     </div>
@@ -102,4 +107,15 @@
     </div>
 
 </body>
+
+<!-- This is a Semantic HTML Change -->
+<footer>
+    <div class="bottom">
+        <div class = "center">
+            Irada Talyshkhanova <br>
+                4166-051
+        </div>
+    </div>
+</footer>
+
 </html>
