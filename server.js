@@ -1,25 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000; 
+const budget = require('./server_s3.json');
 
 app.use('/', express.static('public'));
-
-const budget = { 
- myBudget:[
-    {
-        title:'Eat out',
-        budget: 25
-    },
-    {
-        title:'Rent',
-        budget: 375
-    },
-    {
-        title:'Grocery',
-        budget: 110
-    },
-  ]
-}; 
 
 app.get('/hello', (reg, res)=> {
     res.send('Hello World!');
